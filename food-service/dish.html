@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Food Service</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Chat</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-link dropdown-toggle text-decoration-none"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Spending/Income</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mt-5">
+            <nav class="mb-5 d-flex justify-content-around">
+                <h1>Quán 1</h1>
+                <div>
+                    <form class="d-flex" style="width:400px">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+                
+            </nav>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width:300px; height:500px; overflow: auto;">
+                        <img class="card-img-top"
+                            src="https://www.thespruce.com/thmb/S15sM3N7Zir_xQBGa14Km6gJuCM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/the-difference-between-trees-and-shrubs-3269804-hero-a4000090f0714f59a8ec6201ad250d90.jpg"
+                            alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quán 1</h4>
+                            <p class="card-text">
+                                <p><b>Address: </b>Thủ Đức, làng đại học</p>
+                                <p><b>Rating: </b>4.9/5.0</p>
+                                <p>(100 ratings)</p>
+                                <p><b>Description: </b>Quán ngon, phục vụ mọi sinh viên, bổ, rẻ</p>
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary" style="width:150px">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <div class="card" style="width:300px; height:380px; overflow: auto;">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Your Order</h4>
+                            <p class="card-text">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th></th>
+                                            <th>Cost</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cơm gà xối mỡ</td>
+                                            <td>x<span>2</span></td>
+                                            <td>25k</td>
+                                            <td><button class="btn text-danger">x</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thịt kho tàu</td>
+                                            <td>x<span>1</span></td>
+                                            <td>20k</td>
+                                            <td><button class="btn text-danger">x</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width:300px; height:50px; overflow: hidden;">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <p><b>Total cost:</b> 100k</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width:300px; height:70px; overflow: hidden;">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success" style="width:150px">Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </div>
+        </main>
+
+
+    </div>
+</body>
+
+</html>
